@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+    font-family:sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+
+/* Top Bar */
+.top-bar {
+    background: #570151;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    width: 120px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #570151;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sign-in {
+    border: 2px solid #570151;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+}
+
+
+
+/* catering */
+.bulk-orders {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: white;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout for Images */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.grid-item {
+    position: relative;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+
+/* Green Caption Below Each Image */
+.caption {
+    background-color: #570151;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Text Content */
+.content {
+    text-align: left;
+    /* max-width: 900px; */
+    margin: auto;
+    font-size: 24px;
+    padding: 20px;
+    
+}
+
+.content h3 {
+    color: #570151;
+    margin-top: 20px;
+}
+
+.content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.content ul li {
+    padding: 5px 0;
+    font-size: 26px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .content {
+        text-align: center;
+    }
+}

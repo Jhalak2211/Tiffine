@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Top Bar */
+.top-bar {
+    background: #570151;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    width: 120px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #570151;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sign-in {
+    border: 2px solid #570151;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+}
+
+
+
+
+
+
+/* Split Container */
+.split-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Text Content (Left Side) */
+.text-content {
+    flex: 1;
+    padding-right: 24px;
+}
+
+.text-content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.text-content p {
+    font-size: 26px;
+    line-height: 1.6;
+}
+
+/* Image Content (Right Side) */
+.image-content {
+    flex: 1;
+    text-align: right;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 20px;
+}
+
+
+/* Ordering Steps */
+.steps {
+    background: #f5f5f5;
+    padding: 40px;
+    text-align: center;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.step {
+    background: #570151;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 180px;
+}
+
+.step h3 {
+    font-size: 30px;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .steps-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .split-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .text-content {
+        padding-right: 0;
+    }
+    
+    .image-content {
+        text-align: center;
+        margin-top: 20px;
+    }
+}

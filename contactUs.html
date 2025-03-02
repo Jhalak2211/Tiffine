@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Spice and Slice</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contactUs.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="top-bar">
+            <span>📧 info@Spice&Slice.com | 📞 +91 9820223338</span>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="1.png" alt="Yummy Tiffins Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="mrunali.html">Home</a></li>
+                <li><a href="menupage.html">Menu</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="concept.html">Concept</a></li>
+                <li><a href="corporate.html">Corporate Catering</a></li>
+                <li><a href="contactUs.html" class="active">Contact Us</a></li>
+            </ul>
+            <button class="sign-in">Sign In</button>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>GET IN TOUCH</h2>
+        <div class="contact-info">
+            <div class="contact-box">
+                <img src="phoneicon.png" alt="Phone Icon">
+                <p>+91 9820223338</p>
+            </div>
+            <div class="contact-box">
+                <img src="emailicon.png" alt="Email Icon">
+                <p>info@Spice&Slice.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form">
+        <h3>SEND US AN EMAIL</h3>
+        <form action="submit.php" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="ENTER YOUR NAME" required>
+                <textarea name="message" placeholder="ENTER YOUR MESSAGE" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="tel" name="mobile" placeholder="ENTER YOUR MOBILE NUMBER" required>
+                <div class="captcha">
+                    <span class="captcha-code">4234</span>
+                    <input type="text" name="captcha" placeholder="ENTER THE CODE SHOWN" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="ENTER YOUR EMAIL" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="subject" placeholder="ENTER YOUR SUBJECT" required>
+            </div>
+            <button type="submit" class="submit-btn">SUBMIT</button>
+        </form>
+    </section>
+
+</body>
+</html>
